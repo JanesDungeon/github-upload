@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/src/Graphics.cpp" "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/build/CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o"
-  "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/src/Intersection.cpp" "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/build/CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o"
-  "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/src/Street.cpp" "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/build/CMakeFiles/traffic_simulation.dir/src/Street.cpp.o"
-  "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/src/TrafficLight.cpp" "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/build/CMakeFiles/traffic_simulation.dir/src/TrafficLight.cpp.o"
-  "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/src/TrafficObject.cpp" "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/build/CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o"
-  "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/src/TrafficSimulator-Final.cpp" "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/build/CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-Final.cpp.o"
-  "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/src/Vehicle.cpp" "/home/jane/Workspace/CppND-Program-a-Concurrent-Traffic-Simulation-master/build/CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o"
+  "/home/workspace/my-CppND-concurrent-traffic-sim/src/Graphics.cpp" "/home/workspace/my-CppND-concurrent-traffic-sim/build/CMakeFiles/traffic_simulation.dir/src/Graphics.cpp.o"
+  "/home/workspace/my-CppND-concurrent-traffic-sim/src/Intersection.cpp" "/home/workspace/my-CppND-concurrent-traffic-sim/build/CMakeFiles/traffic_simulation.dir/src/Intersection.cpp.o"
+  "/home/workspace/my-CppND-concurrent-traffic-sim/src/Street.cpp" "/home/workspace/my-CppND-concurrent-traffic-sim/build/CMakeFiles/traffic_simulation.dir/src/Street.cpp.o"
+  "/home/workspace/my-CppND-concurrent-traffic-sim/src/TrafficLight.cpp" "/home/workspace/my-CppND-concurrent-traffic-sim/build/CMakeFiles/traffic_simulation.dir/src/TrafficLight.cpp.o"
+  "/home/workspace/my-CppND-concurrent-traffic-sim/src/TrafficObject.cpp" "/home/workspace/my-CppND-concurrent-traffic-sim/build/CMakeFiles/traffic_simulation.dir/src/TrafficObject.cpp.o"
+  "/home/workspace/my-CppND-concurrent-traffic-sim/src/TrafficSimulator-Final.cpp" "/home/workspace/my-CppND-concurrent-traffic-sim/build/CMakeFiles/traffic_simulation.dir/src/TrafficSimulator-Final.cpp.o"
+  "/home/workspace/my-CppND-concurrent-traffic-sim/src/Vehicle.cpp" "/home/workspace/my-CppND-concurrent-traffic-sim/build/CMakeFiles/traffic_simulation.dir/src/Vehicle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
