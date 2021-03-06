@@ -9,7 +9,7 @@
 class Vehicle;
 template <class T> class MessageQueue;
 
-enum TrafficLightPhase { red, green };
+enum class TrafficLightPhase { red, green };
 
 template <class T> class MessageQueue {
 public:

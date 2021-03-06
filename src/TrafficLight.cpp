@@ -20,7 +20,7 @@ template <typename T> void MessageQueue<T>::Send(T &&msg) {
 
   try {
     std::lock_guard<std::mutex> lckGuard(_mtx);
-    _queue.push_back(std::move(msg));
+    _queue.emplace_back(std::move(msg));
     _cond.notify_one();
 
   } catch (const std::exception &e) {
@@ -34,7 +34,6 @@ TrafficLight::TrafficLight() { _currentPhase = TrafficLightPhase::red; }
 void TrafficLight::waitForGreen() {
 
   while (true) {
-    std::this_thread::sleep_for(std::chrono::milliseconds(1));
     TrafficLightPhase phase = _messageQueue.Receive();
     if (phase == TrafficLightPhase::green) {
       return;
@@ -53,14 +52,12 @@ void TrafficLight::cycleThroughPhases() {
   auto begin = std::chrono::high_resolution_clock::now();
 
   while (true) {
-    std::this_thread::sleep_for(std::chrono::milliseconds(1));
-
     auto end = std::chrono::high_resolution_clock::now();
     auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - begin);
 
     if (elapsed.count() >= randomTime) // toggle every 4-6 seconds
     {
-      if (getCurrentPhase() == green) {
+      if (getCurrentPhase() == TrafficLightPhase::green) {
         setCurrentPhase(TrafficLightPhase::red);
         _messageQueue.Send(std::move(_currentPhase));
       } else {
@@ -70,5 +67,7 @@ void TrafficLight::cycleThroughPhases() {
       randomTime = rand() % 2000 + 4000;
       begin = std::chrono::high_resolution_clock::now(); 
     }
+
+  std::this_thread::sleep_for(std::chrono::milliseconds(1));
   }
 }
